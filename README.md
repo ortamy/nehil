@@ -1,15 +1,15 @@
-# 🧠 MessMind
+# 🧠 Nehil (נְחִיל)
 
 **Decentralized neural network over mesh networks. No cloud. No central server. No single point of failure.**
 
-MessMind is a swarm of devices (phones, Raspberry Pis, laptops) that collaboratively train and run AI models without any internet connection or central coordinator. Nodes communicate only through local mesh (Wi-Fi Direct, Bluetooth, LoRa, or plain Ethernet) and exchange **knowledge** — never raw data.
+Nehil is a swarm of devices (phones, Raspberry Pis, laptops) that collaboratively train and run AI models without any internet connection or central coordinator. Nodes communicate only through local mesh (Wi-Fi Direct, Bluetooth, LoRa, or plain Ethernet) and exchange **knowledge** — never raw data.
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Python 3.10+](https://img.shields.io/badge/python-3.10+-blue.svg)](https://www.python.org/downloads/)
 
 ---
 
-## 🤔 Why MessMind?
+## 🤔 Why Nehil?
 
 **Today's AI is centralized:**
 - Your data leaves your device
@@ -17,7 +17,7 @@ MessMind is a swarm of devices (phones, Raspberry Pis, laptops) that collaborati
 - One company controls the model
 - No internet = no AI
 
-**MessMind flips the model:**
+**Nehil flips the model:**
 - Data never leaves your device
 - Works offline, anywhere
 - No central authority
@@ -27,19 +27,19 @@ MessMind is a swarm of devices (phones, Raspberry Pis, laptops) that collaborati
 
 ## ⚙️ How It Works
 
-> **Step 1 — Local Training**  
+> **Step 1 — Local Training**
 > Each device trains its own copy of the model on its local data (photos, sensor readings, text). Raw data never leaves the device.
 
-> **Step 2 — Compress Knowledge**  
+> **Step 2 — Compress Knowledge**
 > Changes to the model (gradients/weights) are compressed to tiny patches (kilobytes, not megabytes).
 
-> **Step 3 — Gossip Protocol**  
+> **Step 3 — Gossip Protocol**
 > Devices send patches to neighbors via mesh. No central server — just peer-to-peer.
 
-> **Step 4 — Aggregate**  
+> **Step 4 — Aggregate**
 > Each device averages its model with received patches. Knowledge spreads like a rumor.
 
-> **Step 5 — Repeat**  
+> **Step 5 — Repeat**
 > After enough rounds, all devices converge to the same smart model — trained collectively, without anyone seeing anyone else's data.
 
 ---
@@ -56,19 +56,19 @@ MessMind is a swarm of devices (phones, Raspberry Pis, laptops) that collaborati
 
 ## 🎯 Use Cases
 
-**Offline Smart Home**  
+**Offline Smart Home**
 Sensors learn your patterns without sending data to China or AWS.
 
-**Search & Rescue**  
+**Search & Rescue**
 Team in the wilderness with no cell signal — phones collaboratively identify helicopter sounds and share coordinates via mesh.
 
-**Anonymous Collaborative Learning**  
+**Anonymous Collaborative Learning**
 Journalists train a censorship-detection model without revealing their documents.
 
-**Critical Infrastructure**  
+**Critical Infrastructure**
 Submarine, mine, or arctic station — no internet, but internal mesh keeps AI running.
 
-**Physical Penetration Testing**  
+**Physical Penetration Testing**
 Five Raspberry Pis in a backpack work as a distributed AI assistant — analyzing Wi-Fi, recognizing devices, recommending attacks. No cloud, no logs on client servers.
 
 ---
@@ -95,6 +95,25 @@ Five Raspberry Pis in a backpack work as a distributed AI assistant — analyzin
 
 **Option 1: Docker (easiest)**
 ```bash
-git clone https://github.com/yourusername/MessMind.git
-cd MessMind
+git clone https://github.com/yourusername/nehil.git
+cd nehil
 docker-compose up --build
+```
+
+**Option 2: Manual**
+```bash
+git clone https://github.com/yourusername/nehil.git
+cd nehil
+pip install -r requirements.txt
+python node.py --port 8001 --peers localhost:8002,localhost:8003
+```
+
+---
+
+## 📄 License
+
+MIT — use it, break it, build something better.
+
+---
+
+*נְחִיל — a swarm that thinks together.*
